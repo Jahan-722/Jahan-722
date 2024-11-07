@@ -1,0 +1,6 @@
+amount = input('the amount of bill? ')
+tip = input('the amount of tip? 10 , 12, or 15? ')
+people = input('how many people? ')
+money = float(amount) * int(tip) / 100 / int(people)
+final_money = '{:.2f}'.format(money)
+print(f"each person should pay {final_money} $")
